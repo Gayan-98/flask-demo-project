@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Disease Detection</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Heart Disease Detection</h1>
+        <p>Upload an image to analyze and get insights.</p>
+      </header>
+
+      <main>
+        <div class="upload-section">
+          <label for="file-upload" class="custom-file-upload">
+            <input type="file" id="file-upload" accept="image/*" />
+            <span>Upload Image</span>
+          </label>
+        </div>
+
+        <div class="result-section">
+          <h2>Detection Results</h2>
+          <p>No image uploaded yet.</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>Powered by AI developers for better healthcare outcomes.</p>
+      </footer>
+    </div>
+  </body>
+</html>
